@@ -7,6 +7,8 @@ interface Props {
 }
 
 export const Container = styled.TouchableOpacity<Props>`
+  padding-left: 10px;
+  padding-right: 10px;
   align-items: center;
   justify-content: center;
   flex-direction: row;

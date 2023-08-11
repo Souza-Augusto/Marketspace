@@ -5,6 +5,7 @@ export declare global {
     interface RootParamList {
       home: undefined;
       signIn: undefined;
+      signUp: undefined;
     }
   }
 }

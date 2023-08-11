@@ -12,7 +12,9 @@ export function Button({title, type, icon, ...rest}: Props) {
   return (
     <Container {...rest} type={type} activeOpacity={0.5}>
       {icon}
-      <Title type={type}>{title}</Title>
+      <Title numberOfLines={1} type={type}>
+        {title}
+      </Title>
     </Container>
   );
 }
