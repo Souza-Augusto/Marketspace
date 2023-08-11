@@ -11,10 +11,11 @@ import {
 import {Input} from '@components/Input';
 import {Ionicons} from '@expo/vector-icons';
 import {Button} from '@components/Button';
-import {Header} from 'react-native/Libraries/NewAppScreen';
+import {useNavigation} from '@react-navigation/native';
 
 export function SignIn() {
   const {COLORS} = useTheme();
+  const {navigate} = useNavigation();
 
   return (
     <ScrollView
@@ -42,6 +43,7 @@ export function SignIn() {
         </DataContainer>
         <HeaderTitle>Ainda não tem acesso?</HeaderTitle>
         <Button
+          onPress={() => navigate('signUp')}
           style={{marginLeft: 48, marginRight: 48}}
           type="GRAY"
           title="Criar uma conta"
