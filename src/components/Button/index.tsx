@@ -1,11 +1,11 @@
 import {TouchableOpacityProps} from 'react-native/types';
 import {ButtonTypeStyleProps, Container, Title} from './styles';
-import {ReactNode} from 'react';
+import {ReactElement, ReactNode} from 'react';
 
 interface Props extends TouchableOpacityProps {
   title: string;
   type?: ButtonTypeStyleProps;
-  icon?: ReactNode;
+  icon?: ReactElement;
 }
 
 export function Button({title, type, icon, ...rest}: Props) {
