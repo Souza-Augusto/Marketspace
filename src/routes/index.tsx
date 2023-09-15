@@ -8,9 +8,9 @@ export function Routes() {
   const {COLORS} = useTheme();
 
   return (
-    <View style={{flex: 1, backgroundColor: COLORS.GRAY_700}}>
+    <View style={{flex: 1, backgroundColor: COLORS.GRAY_600}}>
       <NavigationContainer>
-        <AuthRoutes />
+        <AppRoutes />
       </NavigationContainer>
     </View>
   );
