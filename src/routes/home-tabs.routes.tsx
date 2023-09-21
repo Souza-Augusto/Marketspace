@@ -3,11 +3,13 @@ import {
   BottomTabNavigationProp,
 } from '@react-navigation/bottom-tabs';
 import {Home} from '@screens/Home';
+import {MyAds} from '@screens/MyAds';
 import {useTheme} from 'styled-components/native';
 import {Ionicons} from '@expo/vector-icons';
 
 type HomeTabsRoutes = {
   home: undefined;
+  myAds: undefined;
 };
 
 export type HomeTabsNavigatorRoutesProps =
@@ -44,7 +46,7 @@ export function HomeTabsRoutes() {
 
       <Screen
         name="myAds"
-        component={Home}
+        component={MyAds}
         options={{
           tabBarIcon: ({color}) => (
             <Ionicons name="md-pricetag-outline" size={30} color={color} />
