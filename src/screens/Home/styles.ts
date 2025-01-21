@@ -2,6 +2,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {css} from 'styled-components';
 import {styled} from 'styled-components/native';
 import {Octicons, Ionicons} from '@expo/vector-icons';
+import {FlatListProps} from 'react-native';
 
 export const Container = styled(SafeAreaView)`
   flex: 1;
@@ -116,7 +117,9 @@ export const Divider = styled.View`
   margin: 0px 12px;
 `;
 
-export const FlatList = styled.FlatList`
-  margin-top: 24px;
+export const ListContainer = styled.View`
+  flex: 1;
   align-self: center;
+  width: 100%;
+  padding: 0px 32px;
 `;

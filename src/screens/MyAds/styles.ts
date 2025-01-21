@@ -83,7 +83,13 @@ export const FilterButtonTitle = styled.Text`
   `}
 `;
 
-export const FlatList = styled.FlatList`
+export const FlatList = styled.FlatList.attrs({
+  contentContainerStyle: {
+    justifyContent: 'space-around',
+    alignSelf: 'center',
+    width: '100%',
+    paddingHorizontal: 32,
+  },
+})`
   margin-top: 24px;
-  align-self: center;
 `;

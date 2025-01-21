@@ -14,7 +14,7 @@ import {
   SelectorTitle,
 } from './styles';
 import {Header} from '@components/Header';
-import {AdsCard} from '@components/AdsCard';
+import {ProductCard} from '@components/product-card';
 
 export function MyAds() {
   const [toggleFilter, setToggleFilter] = useState(false);
@@ -134,12 +134,7 @@ export function MyAds() {
         data={AdsData}
         keyExtractor={(item) => String(item.id)}
         renderItem={({item}) => (
-          <AdsCard
-            title={item.name}
-            price={item.price}
-            containerStyle={{marginHorizontal: 12}}
-            uri={item.image}
-          />
+          <ProductCard title={item.name} price={item.price} uri={item.image} />
         )}
         numColumns={2}
       />
